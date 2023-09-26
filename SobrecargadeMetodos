@@ -1,0 +1,29 @@
+public class Matematica {
+	int somar(int x, int y){
+	System.out.println(“int somar(int x, int y)”);
+		return x + y;
+
+	}
+	int somar(int x, int y, int z){
+	System.out.println(“int somar(int x, int y, int z)”);
+		return x + y + z;
+
+	}
+	double somar(double x, double y) {
+		System.out.println(“double somar(double x, double y)”)
+		return x + y;
+	}
+}
+
+//Nova Classe
+public class Aplicacao {
+	public static void main(String [] args) {
+		Matematica m = new Matematica();
+		
+		int soma = m.somar(10, 20); //*
+		System.out.println(soma);
+
+		double soma2 = m.somar(10.0, 20.0);
+		//inserir caracteres do tipo double
+	}
+}
